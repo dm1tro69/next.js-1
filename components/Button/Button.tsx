@@ -7,6 +7,7 @@ import cn from "classnames";
 
 const Button = ({
   appearance,
+  arrow = "none",
   children,
   className,
   ...props
@@ -20,6 +21,15 @@ const Button = ({
       {...props}
     >
       {children}
+      {arrow !== "none" && (
+        <span
+          className={cn(styles.error, {
+            [styles.down]: arrow === "down",
+          })}
+        >
+          <img src="./arrow.svg" alt="img" />
+        </span>
+      )}
     </button>
   );
 };

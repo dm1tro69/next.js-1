@@ -10,6 +10,7 @@
     border-radius: 5px;
     font-size: 14px;
     transition: all 0.2s;
+
 }
 .primary {
     color: var(--white);
@@ -28,4 +29,16 @@
     background: var(--primary);
     color: var(--white);
 
+}
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+}
+.down {
+    transform: rotate(90deg);
+    transition: all 0.2s;
+
+}
+.primary svg {
+    fill: var(--white)
 }
